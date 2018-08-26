@@ -1,6 +1,7 @@
 # Web Development with Laravel
 
 Basic: bit.ly/training-laravel-basic-v4
+Telegram: t.me/laravel_malaysia
 
 ## Tools & Environment
 
