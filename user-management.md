@@ -1,0 +1,33 @@
+## User Managament
+
+- [ ] Database
+	- [ ] Factory
+		- [ ] Tinker `php artisan tinker`
+		- [ ] `factory(\App\User::class, 100)->create();`
+	- [ ] Migration
+	- [ ] Seed
+		- [ ] `php artisan make:seeder UserTableSeeder`
+		- [ ] `$this->call(UserTableSeeder::class);` in `DatabaseSeeder.php`
+		- [ ] `php artisan db:seed`
+		- [ ] `php artisan db:seed --class=UserTableSeeder`
+- [ ] Model / Eloquent
+	- [ ] App\User
+- [ ] Controllers - `php artisan make:controller UserController -r`
+	- [ ] index
+		- [ ] All
+		- [ ] Paginate
+	- [ ] show
+	- [ ] create
+	- [ ] store
+		- [ ] Validation
+	- [ ] update
+		- [ ] Validation
+	- [ ] edit
+	- [ ] destroy
+- [ ] Views
+	- [ ] list of user - `users.index`
+	- [ ] user details - `users.show`
+	- [ ] create user - `users.create`
+	- [ ] edit user - `users.edit`
+- [ ] Route
+	- [ ] `Route::resource('users', 'UserController')`
