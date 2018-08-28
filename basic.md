@@ -180,3 +180,70 @@ php artisan make:migration alter_table --table=table_names
 
 Development: Seeder + Factory
 Reference Data: Negeri, Postcode
+
+
+## Data
+
+- [x] Model / Eloquent
+- [x] Migration
+
+```
+php artisan make:model Models/Department -m
+php artisan migrate
+```
+
+- [ ] Factory
+- [ ] Seeder
+
+```
+php artisan make:seeder DepartmentSeeder
+php artisan db:seed
+php artisan db:seed --class=DepartmentSeeder
+php artisan migrate:fresh --seed
+```
+
+## Naming Conventions
+
+### Database
+
+Table name in plural except for pivot
+
+```
+users
+departments
+```
+
+#### Foreign Key(FK)
+
+FK name used is `table_name_in_singular_id`. For instance:
+
+```
+department_id
+user_id
+```
+
+### Models
+
+Reorganise models to be under `app/Models`.
+
+Creating modals will be like:
+
+```
+php artisan make:model Models/Department
+php artisan make:model Models/Employee
+```
+
+### Classes / File names
+
+In studly case format - StudlyCase
+
+### Views
+
+Directory name in kebab case - `kebab-case`.
+
+```
+user
+hr-payroll
+hr-leave
+hr-claim
+```
