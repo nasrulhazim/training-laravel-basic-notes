@@ -2,6 +2,7 @@
 
 Basic: bit.ly/training-laravel-basic-v4
 Telegram: t.me/laravel_malaysia
+Laracasts: www.laracasts.com
 
 ## Tools & Environment
 
@@ -9,6 +10,7 @@ Telegram: t.me/laravel_malaysia
 	- [ ] Sublime Text 3
 	- [ ] PHPStorm
 	- [ ] Atom
+	- [ ] Visual Studio Code
 - [ ] SQL Editor
 	- [ ] Sequel Pro (Mac only)
 	- [ ] SQLYog Community
@@ -21,7 +23,7 @@ Telegram: t.me/laravel_malaysia
 # 101
 
 - [ ] Create project
-	- [ ] `laravel new project-name`
+	- [x] `laravel new project-name`
 		- [ ] php artisan serve - run laravel project using php web server.
 	- [ ] Create database
 	- [ ] Setup `.env` 
@@ -82,6 +84,8 @@ $ php artisan tinker
 >>> factory(\App\User::class, 100)->create();
 ```
 
+## Model
+
 - [ ] Model - get all users
 
 ```
@@ -89,7 +93,7 @@ $users = \App\User::all();
 return view('users.index', compact('users'));
 ```
 
-## Pagination
+### Pagination
 
 ```
 $users = \App\User::paginate($length = 25);
